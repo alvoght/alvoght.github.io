@@ -1,6 +1,19 @@
 body {
-    font-size:15px;
+    font-size:14px;
+	color:#333;
+	font-family:Arial,sans-serif;
+	line-height:1.43;
 }
+
+body, html {height:100%; 	margin:0; padding:0;}
+
+html.splitter-invoked, body.splitter-invoked {
+	overflow:hidden;
+}
+
+html {display:block;}
+
+p {margin:10px 0 0 0; padding:0;}
 
 .bs-callout {
     padding: 20px;
@@ -83,7 +96,7 @@ dt[id]{
     margin-top: -40px
 }
 
-body h1 {margin-top:40px;}
+body h1 {margin-top:40px; color:rgb(53,114,176); font-size:28px; text-align:center;font-weight:bold;}
 
 .post-content img {
     margin: 12px 0px 3px 0px;
@@ -232,12 +245,11 @@ ul#results-container a: hover {
   color: black;
 }
 
-
 #search-demo-container a:hover {
    color: black;
 }
 #search-input {
-  padding: .5em;
+  padding: 2px 26px 2px 10px;
   margin-left:20px;
   width:20em;
   font-size: 0.8em;
@@ -245,7 +257,14 @@ ul#results-container a: hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float: right;
-  margin-top:10px;
+  margin:5px 0px;
+  background-color:#1a4067;
+  border-radius:3px;
+  box-shadow:none;
+  color:rgba(255,255,255,0.6);
+  width:220px;
+  border:none;
+  height:30px;
   }
 /* end search */
 
@@ -549,9 +568,6 @@ button.cursorNorm {
 cursor: default;
 }
 
-a.dropdown-toggle, .navbar-inverse .navbar-nav > li > a  {
-  margin-left: 10px;
-}
 
 hr.faded {
     border: 0;
@@ -606,7 +622,7 @@ a.fa.fa-envelope-o.mailto {
   font-weight: 600;
 }
 
-h3 {color: #ED1951; font-weight:normal; font-size:130%;}
+h3 {color: #333333; font-weight:normal; font-size:16px;}
 h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
 
 .alert, .callout {
@@ -678,8 +694,10 @@ button.cursorNorm {
 }
 
 h2  {
-    font-size:24px;
+    font-size:20px;
     line-height:29px;
+	color:#326ca6;
+	font-weight:bold;
 }
 span.otherProgrammingLanguages {
 font-style: normal;
@@ -921,7 +939,8 @@ span.soft {
     padding:10px;
 }
 
-/* this part adds an icon after external links, using FontAwesome*/
+
+/* this part adds an icon after external links, using FontAwesome
 a[href^="http://"]:after, a[href^="https://"]:after {
     content: "\f08e";
     font-family: FontAwesome;
@@ -931,6 +950,8 @@ a[href^="http://"]:after, a[href^="https://"]:after {
     text-decoration: none;
     padding-left: 3px;
 }
+*/
+
 
 /* Strip the outbound icon when this class is present */
 a[href^="http://own-domain.com"]:after,
@@ -972,4 +993,136 @@ div.results {
 .algolia__result-highlight {
     background-color: yellow;
     font-weight: bold;
+}
+
+.icon-search:after {
+	color: rgba(255,255,255,0.6);
+}
+
+.fa-mail-forward, .fa-home, .fa-github {  
+  font-size:14px;  
+  padding: 0px 10px;  
+  text-align:center;  
+  margin-left:10px;  
+  color:#3572b0;  
+}  
+ 
+h1 a:hover {background-color:rgb(53,114,176);}
+ 
+.fa-mail-forward:before, .fa-home:before, .fa-github:before, .fa-bars:before {font-size:16px;} 
+
+.fa-bars:before {color:#fff; margin-top:-8px;} 
+
+.navbar-right .dropdown-menu {right:auto;}
+
+.dropdown {height:40px; width:36px;}
+
+.navbar-collapse {padding:0px;}
+
+.dropdown-toggle {padding:13px 23px 13px 10px; margin:0px;}
+
+.container .topnavlinks {margin:0; padding:0px 10px; max-width:100%; height:41px; border-bottom:1px solid #2e3d54;}
+
+#header {
+	background-color:#205081;
+}  
+  
+.github-repo-button {background-color:#3572b0; color:#fff; margin:5px 0 0 10px; padding:4px 10px; border-radius:3px;}
+  
+.github-repo-button:hover {background-color:#2f659c;}  
+  
+#splitter-sidebar a {
+	color:#333;
+}
+  
+#splitter-sidebar h3, .expand-control-text, .expand-control {  
+  font-size: 16px;  
+  font-weight:normal;  
+  line-height:1.5;  
+  margin:30px 0px 0px 0px;  
+  border-bottom:0px;  
+  color:#333333;  
+  padding-left:10px;
+}  
+
+#splitter {
+	min-width:600px;
+	min-height:300px;
+}
+
+#splitter #splitter-content, #splitter #splitter-sidebar {
+	overflow:auto;
+	margin-left:8px;
+	display:inline;
+}
+ 
+#splitter-sidebar {background-color:#f5f5f5;}
+
+#splitter-content {padding-bottom:40px;}
+
+#splitter-sidebar  li a, #splitter-sidebar  ul {color:#4c4c4c;}
+
+.expand-control-text:hover, .expand-control:hover {  
+  text-decoration:none;  
+}  
+
+#splitter-sidebar li {list-style:none;}
+
+#splitter-sidebar li:before {
+      content:'\2022';
+      display: block;
+      position: relative;
+      width: 4px!important;
+      height: 4px;
+      left: -15px;
+      top: 0px;
+      color: #999;
+      font-size: 20px;
+	  border-radius:2px;
+}
+
+.side-nav-link {  
+  font-size:14px;  
+  line-height: 2;  
+}   
+
+#full-height-container {
+	height:100%;
+	width:100%;
+	position:relative;
+	background-color:#ffffff;
+}
+
+#header-precursor {
+	margin:0;
+	padding:0;
+	display:block;
+}
+
+#main-content {
+	margin: 1em 0 0;
+	padding:0;
+	display:block;
+}
+
+#main {
+	border:0;
+	padding:20px;
+	min-height:40em;
+	margin:0;
+	clear:both;
+	background:#fff;
+	box-sizing:border-box;
+	display:block;
+	position:relative;
+	width:100%;
+}
+
+.vsplitbar {
+	width:5px;
+	background:#cccccc;
+	background-image:url(/s/en_GB/5994/3a465f7321af83b92e8f7149d515f72cee083e87.78/5.8.14/_/download/resources/com.atlassian.confluence.plugins.doctheme:css-resources/vgrabber.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	display:block;
 }
